@@ -103,7 +103,7 @@ app.get("/login", (req, res) => {
 //Use the req.isAuthenticated() function to check if user is Authenticated
 checkAuthenticated = (req, res, next) => {
   if (req.isAuthenticated()) { return next() }
-  res.redirect("/login")
+  res.redirect("/login") 
 }
 
 //Define the Protected Route, by using the "checkAuthenticated" function defined above as middleware
