@@ -1,5 +1,6 @@
 <h1> <%= name %> is logged in </h1>
-  
+<p> Email:  <%= user.email %> is logged in </p>
+<p> Provider: <%= user.provider %> is logged in </p>
 <form action="/logout" method="POST">
      <button type="submit"> Logout </button>
 </form>
